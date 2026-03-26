@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-void increment(int x) {
-	++x;
-	printf("%d\n", x);
+void swap(int *x, int *y) {
+	int tmp = *x;
+	*x = *y;
+	*y = tmp;
 }
 
 int main() {
-	int x = 10;
+	int x = 100, y = 200;
+
+	printf("x = %d, y = %d\n", x, y);
+
+	swap(&x, &y);
 	
-	printf("%d\n", x);
-	increment(x);
-	printf("%d\n", x);
+	printf("x = %d, y = %d\n", x, y);
 
 	return 0;
 }
