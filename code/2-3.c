@@ -1,21 +1,20 @@
 #include <stdio.h>
 
-void swap(int *x, int *y) {
-	int tmp = *x;
-	*x = *y;
-	*y = tmp;
+void divide(int a, int b, int *q, int *r) {
+	*q = a / b;
+	*r = a % b;
 }
 
 int main() {
-	int x = 100, y = 200;
+	int a = 27;
+	int b = 4;
+	int q = 0;
+	int r = 0;
 
-	printf("x = %d, y = %d\n", x, y);
+	divide(a, b, &q, &r);
 
-	swap(&x, &y);
-	
-	printf("x = %d, y = %d\n", x, y);
+	printf("%d\n%d\n", q, r);
 
 	return 0;
+
 }
-
-
