@@ -12,7 +12,7 @@ void test_scope() {
 
 	printf("global_var: %d\n", global_var);
 	printf("static_var: %d\n", static_var);
-	printf("locar_var: %d\n", local_var);
+	printf("local_var: %d\n", local_var);
 
 }
 
